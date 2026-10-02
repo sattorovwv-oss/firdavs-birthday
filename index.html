@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Фирдавс, с днём рождения! Немного воспоминаний, тёплых слов и один сюрприз от твоего друга.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Фирдавс, с днём рождения!</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%230b1020'/%3E%3Ctext x='20' y='29' text-anchor='middle' fill='%23ffc480' font-size='29' font-family='Georgia'%3EФ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="header wrap">
+    <a href="#home" class="brand" aria-label="В начало"><span class="brand-mark">Ф.</span><span>ДЛЯ МОЕГО ДРУГА</span></a>
+    <nav aria-label="Навигация"><a href="#memory">Воспоминание</a><a href="#letter">Письмо</a></nav>
+    <button class="music-button" id="music" aria-pressed="false" aria-label="Включить тихую музыку"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="music-label">Музыка</span></button>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="little-star" aria-hidden="true">✦</span>02 ОКТЯБРЯ <span class="eyebrow-line"></span> ТВОЙ ДЕНЬ</div>
+        <h1 id="hero-title">С днём<br>рождения,<br><em>Фирдавс.</em></h1>
+        <p class="hero-description">Время меняет многое.<br>Но некоторые люди — навсегда свои.</p>
+        <a class="primary-button" href="#letter" id="open-greeting">Открыть поздравление <span aria-hidden="true">✦</span></a>
+        <div class="hero-note"><span></span>Небольшой сайт. Большое спасибо за дружбу.</div>
+      </div>
+      <div class="photo-scene">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <span class="scene-spark spark-one" aria-hidden="true">✧</span><span class="scene-spark spark-two" aria-hidden="true">✦</span>
+        <div class="photo-badge"><span>НАША</span><strong>история</strong><span>≈ 10 ЛЕТ</span></div>
+        <button class="polaroid" id="open-photo" aria-label="Рассмотреть нашу детскую фотографию">
+          <img src="./assets/friends.jpg" alt="Наша общая детская фотография, сделанная около десяти лет назад" width="571" height="604" fetchpriority="high">
+          <span class="photo-caption">Когда всё только начиналось.</span>
+          <span class="photo-date">ОКОЛО 10 ЛЕТ НАЗАД</span>
+        </button>
+        <span class="photo-hint">нажми на фото — вспомни тот день</span>
+      </div>
+      <a href="#memory" class="scroll-note"><span class="scroll-line" aria-hidden="true"></span>ВПЕРЕДИ ЕЩЁ МНОГО ХОРОШЕГО</a>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div><span>С ДНЁМ РОЖДЕНИЯ</span><b>✦</b><span>ФИРДАВС</span><b>✦</b><span>СВОИ ЛЮДИ — НАВСЕГДА</span><b>✦</b><span>С ДНЁМ РОЖДЕНИЯ</span><b>✦</b><span>ФИРДАВС</span><b>✦</b><span>СВОИ ЛЮДИ — НАВСЕГДА</span><b>✦</b></div></div>
+
+    <section class="memory-section wrap" id="memory" aria-labelledby="memory-title">
+      <div class="memory-heading reveal"><p class="section-label">01 / ВОСПОМИНАНИЕ</p><h2 id="memory-title">Один кадр.<br><em>Целая история.</em></h2></div>
+      <div class="memory-copy reveal"><span class="ten" aria-hidden="true">≈10</span><span class="ten-caption">ЛЕТ МЕЖДУ ЭТИМ КАДРОМ И СЕГОДНЯ</span><p>Тогда мы были детьми. Не знали, сколько всего будет впереди, и просто жили тот момент.</p><p>Теперь эта фотография напоминает: самое ценное — люди, с которыми у тебя есть своя история. И ты — один из них.</p><div class="memory-divider"></div><span class="small-quote">Мы выросли. Воспоминания остались.</span></div>
+    </section>
+
+    <section class="letter-section" id="letter" aria-labelledby="letter-title">
+      <div class="wrap letter-intro reveal"><p class="section-label">02 / ЛИЧНОЕ</p><h2 id="letter-title">Некоторые вещи<br>лучше сказать <em>от души.</em></h2></div>
+      <article class="letter-paper reveal">
+        <div class="letter-meta"><span>ФИРДАВСУ</span><span>02.10</span></div>
+        <span class="letter-star" aria-hidden="true">✦</span>
+        <h3>С днём рождения, брат!</h3>
+        <p>Смотри на эту фотографию. Прошло около десяти лет, а она всё ещё возвращает нас в то время, когда мы были детьми. Столько всего изменилось. Но я рад, что могу сегодня поздравить тебя.</p>
+        <p>Я желаю тебе крепкого здоровья, спокойствия в душе и уверенности в себе. Пусть рядом будут люди, которым можно доверять, а дома всегда ждут тепло и поддержка.</p>
+        <p>Пусть у тебя хватает смелости идти к своим мечтам. Даже если путь окажется сложнее, чем хотелось, — не сдавайся. Ты заслуживаешь жизни, которой будешь гордиться.</p>
+        <p>И пусть впереди будет ещё много поводов смеяться, встречаться и делать новые фотографии. Чтобы через десять лет мы смотрели на них и говорили: «Вот это было время!»</p>
+        <p class="letter-emphasis">Спасибо, что ты есть.<br>За тебя, за нашу историю и за всё, что ещё впереди.</p>
+        <div class="signature"><span>Твой друг,</span><strong>Юсуф</strong></div>
+      </article>
+      <p class="letter-footnote">Не просто поздравление. Маленькое воспоминание, которое теперь всегда с тобой.</p>
+    </section>
+
+    <section class="wishes-section wrap" aria-labelledby="wishes-title">
+      <div class="wishes-heading reveal"><p class="section-label">03 / ВПЕРЕДИ</p><h2 id="wishes-title">Пусть этот год<br>будет <em>твоим.</em></h2><p>Четыре пожелания для тебя.<br>Открой каждое.</p></div>
+      <div class="wishes-grid">
+        <button class="wish-card reveal" aria-expanded="false"><span class="wish-top"><span>01</span><span class="wish-symbol" aria-hidden="true">✧</span></span><strong>Большие мечты</strong><span class="wish-detail">Пусть то, что сегодня кажется далёким, однажды станет твоей обычной жизнью.</span><span class="wish-hint">Открыть пожелание <span aria-hidden="true">+</span></span></button>
+        <button class="wish-card reveal" aria-expanded="false"><span class="wish-top"><span>02</span><span class="wish-symbol" aria-hidden="true">♡</span></span><strong>Свои люди</strong><span class="wish-detail">Пусть рядом будут те, с кем можно быть собой. Кто поддержит и разделит твою радость.</span><span class="wish-hint">Открыть пожелание <span aria-hidden="true">+</span></span></button>
+        <button class="wish-card reveal" aria-expanded="false"><span class="wish-top"><span>03</span><span class="wish-symbol" aria-hidden="true">⌁</span></span><strong>Новые дороги</strong><span class="wish-detail">Пусть жизнь ведёт тебя в места, которые вдохновляют, и дарит встречи, которые меняют к лучшему.</span><span class="wish-hint">Открыть пожелание <span aria-hidden="true">+</span></span></button>
+        <button class="wish-card reveal" aria-expanded="false"><span class="wish-top"><span>04</span><span class="wish-symbol" aria-hidden="true">☀</span></span><strong>Простое счастье</strong><span class="wish-detail">Пусть будет здоровье, душевный покой и побольше обычных дней, в которых тебе хорошо.</span><span class="wish-hint">Открыть пожелание <span aria-hidden="true">+</span></span></button>
+      </div>
+    </section>
+
+    <section class="finale wrap reveal" aria-labelledby="finale-title">
+      <span class="finale-star" aria-hidden="true">✦</span><p class="section-label">А ТЕПЕРЬ — ТВОЙ МОМЕНТ</p>
+      <h2 id="finale-title">Загадай желание,<br><em>Фирдавс.</em></h2>
+      <p>Пусть оно обязательно сбудется.</p>
+      <button class="primary-button" id="celebrate">Загадал! <span aria-hidden="true">✦</span></button>
+      <p class="final-message" id="final-message" role="status" aria-live="polite"></p>
+      <div class="closing-line"><span></span><span>НАША ИСТОРИЯ ПРОДОЛЖАЕТСЯ</span><span></span></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>Сделано с душой. Для своего человека.</span><span>02 ОКТЯБРЯ <b>✦</b> ФИРДАВС</span></footer>
+
+  <dialog id="photo-dialog" aria-label="Детская фотография"><button id="close-photo" class="dialog-close" aria-label="Закрыть фотографию">×</button><img src="./assets/friends.jpg" alt="Наша общая детская фотография около десяти лет назад" width="571" height="604"><p>Около 10 лет назад. Наша история.</p></dialog>
+  <noscript><style>.reveal{opacity:1;transform:none}.wish-detail{display:block}#music,#celebrate{display:none}</style></noscript>
+</body>
+</html>
